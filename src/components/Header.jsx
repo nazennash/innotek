@@ -5,7 +5,6 @@ export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Handle scroll effect for header
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 20);
@@ -17,11 +16,10 @@ export const Header = () => {
     };
   }, []);
 
-  // Handle window resize to close mobile menu on md screens and above
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
-        setMobileMenuOpen(false); // Close the mobile menu on md screens and above
+        setMobileMenuOpen(false); 
       }
     };
 
@@ -31,7 +29,6 @@ export const Header = () => {
     };
   }, []);
 
-  // Navigation items with consistent structure
   const navItems = [
     { name: 'Home', href: '#' },
     { name: 'About Us', href: '#about' },
@@ -46,13 +43,12 @@ export const Header = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        {/* Logo and Mobile Menu Button */}
         <div className="flex items-center">
           <a
             href="#"
             className="flex title-font font-medium items-center text-gray-900 transform transition-transform duration-300 hover:scale-105"
           >
-            <div className="w-12 h-12 text-white p-2 bg-indigo-600 rounded-full flex items-center justify-center overflow-hidden relative">
+            <div className="hidden md:block w-12 h-12 text-white p-2 bg-indigo-600 rounded-full flex items-center justify-center overflow-hidden relative">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
