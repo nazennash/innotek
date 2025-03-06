@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -79,14 +80,15 @@ export const Header = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex md:ml-auto md:mr-auto flex-wrap items-center text-base justify-center space-x-8">
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.name}
-              href={item.href}
+            //   href={item.href}
+                to={item.href}
               className="font-medium text-gray-800 hover:text-indigo-600 transition-colors duration-300 relative group py-2"
             >
               <span>{item.name}</span>
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-600 transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </Link>
           ))}
         </nav>
 
