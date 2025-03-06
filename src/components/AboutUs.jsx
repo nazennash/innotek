@@ -85,7 +85,7 @@ export const AboutUs = () => {
 
           {/* Story and Mission Section */}
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid md:grid-cols-2 gap-8 md:items-center">
               {/* Story and Mission */}
               <div className="animate-fade-in-left">
                 <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -106,9 +106,9 @@ export const AboutUs = () => {
                     </svg>
                     Our Story
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 mb-6 leading-10">
                     Founded in 2010, we started as a small team of passionate individuals dedicated to creating eco-friendly products. Our journey began in a small garage, and today, we serve customers worldwide.
-                  </p>
+                </p>
                   <h3 className="text-2xl font-semibold mb-4 flex items-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +126,7 @@ export const AboutUs = () => {
                     </svg>
                     Our Mission
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 mb-6 leading-10">
                     Our mission is to provide sustainable solutions that improve lives while protecting the planet. We believe in creating products that are good for people and the environment.
                   </p>
                   <h3 className="text-2xl font-semibold mb-4 flex items-center">
@@ -146,7 +146,7 @@ export const AboutUs = () => {
                     </svg>
                     Our Values
                   </h3>
-                  <ul className="text-gray-600 list-disc list-inside mb-6">
+                  <ul className="text-gray-600 list-disc list-inside mb-6 leading-10">
                     <li>Sustainability</li>
                     <li>Innovation</li>
                     <li>Customer Focus</li>
@@ -175,7 +175,7 @@ export const AboutUs = () => {
                     </svg>
                     Our Team
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 mb-6 leading-10">
                     Meet our team of passionate designers, engineers, and customer service experts who make it all possible. We’re proud to have a diverse and talented group of individuals who share our vision.
                   </p>
                   <h3 className="text-2xl font-semibold mb-4 flex items-center">
@@ -195,7 +195,7 @@ export const AboutUs = () => {
                     </svg>
                     Why Choose Us?
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 mb-6 leading-10">
                     Unlike others, we source 100% of our materials from sustainable farms and ensure fair wages for all workers. Our commitment to quality and sustainability sets us apart.
                   </p>
                   <h3 className="text-2xl font-semibold mb-4 flex items-center">
@@ -215,7 +215,7 @@ export const AboutUs = () => {
                     </svg>
                     Community Involvement
                   </h3>
-                  <p className="text-gray-600 mb-6">
+                  <p className="text-gray-600 mb-6 leading-10">
                     We donate 5% of all profits to environmental conservation projects and actively participate in community initiatives to make a positive impact.
                   </p>
                 </div>
@@ -229,7 +229,7 @@ export const AboutUs = () => {
       <section className="py-12 bg-indigo-50 animate-fade-in">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Join Us in Making a Difference</h2>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 mb-6 leading-10">
             We’re always looking for talented individuals who share our passion for sustainability and innovation. If you’re ready to make a difference, we’d love to hear from you.
           </p>
           <button className="bg-indigo-500 text-white px-6 py-2 rounded-lg hover:bg-indigo-600 transition-colors duration-300">
