@@ -28,6 +28,7 @@ export const AboutUs = () => {
                 {/* Card 1 - CEO */}
                 <div className="p-4 md:w-1/3 sm:mb-0 mb-6 animate-fade-in-up">
                   <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  {/* <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"> */}
                     <img
                       alt="CEO"
                       className="object-cover object-center h-full w-full"
@@ -44,6 +45,7 @@ export const AboutUs = () => {
                 {/* Card 2 - CTO */}
                 <div className="p-4 md:w-1/3 sm:mb-0 mb-6 animate-fade-in-up delay-100">
                   <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  {/* <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"> */}
                     <img
                       alt="CTO"
                       className="object-cover object-center h-full w-full"
@@ -60,6 +62,7 @@ export const AboutUs = () => {
                 {/* Card 3 - COO */}
                 <div className="p-4 md:w-1/3 sm:mb-0 mb-6 animate-fade-in-up delay-200">
                   <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  {/* <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"> */}
                     <img
                       alt="COO"
                       className="object-cover object-center h-full w-full"

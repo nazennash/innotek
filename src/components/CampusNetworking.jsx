@@ -4,18 +4,18 @@ export const CampusNetworking = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="text-gray-600 body-font bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          {/* Left Column: Text Content */}
+      <section className="text-gray-600 body-font bg-gradient-to-br from-indigo-50 via-blue-50 to-purple-50">
+        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center animate-fadeIn">
+          {/* Left Column */}
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-gray-900">
+            <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">
               Campus Networking Solutions
             </h1>
             <p className="mb-8 leading-relaxed text-gray-600">
               Design and implement enterprise-grade campus networks with scalable architecture, high availability, and centralized management for educational and corporate environments.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-3 px-8 focus:outline-none hover:bg-indigo-600 rounded-lg text-lg transform hover:scale-105 transition-transform duration-300">
+              <button className="inline-flex text-white bg-gradient-to-r from-indigo-500 to-purple-600 border-0 py-3 px-8 focus:outline-none hover:from-indigo-600 hover:to-purple-700 rounded-lg text-lg transform hover:scale-105 transition-all duration-300 hover:shadow-lg">
                 Get Started Now
               </button>
               <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-3 px-8 focus:outline-none hover:bg-gray-200 rounded-lg text-lg transform hover:scale-105 transition-transform duration-300">
@@ -23,10 +23,10 @@ export const CampusNetworking = () => {
               </button>
             </div>
           </div>
-          {/* Right Column: Image */}
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          {/* Right Column */}
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 transform hover:scale-105 transition-all duration-500">
             <img
-              className="object-cover object-center rounded-lg shadow-2xl"
+              className="object-cover object-center rounded-xl shadow-2xl hover:shadow-3xl transition-all duration-300"
               alt="Campus Networking Illustration"
               src="https://dummyimage.com/720x600/3b82f6/ffffff&text=Campus+Networking"
             />
@@ -38,15 +38,17 @@ export const CampusNetworking = () => {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="text-center mb-20">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Our Campus Networking Solutions?</h2>
+            <h2 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600 mb-4">
+              Why Choose Our Campus Networking Solutions?
+            </h2>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               Our solutions are designed to meet the unique needs of educational and corporate environments, ensuring seamless connectivity and robust security.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
             {/* Feature 1 */}
-            <div className="p-4 md:w-1/3 sm:w-1/2 w-full transform hover:scale-105 transition-transform duration-300">
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:bg-gradient-to-br hover:from-white hover:to-indigo-50">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -60,8 +62,8 @@ export const CampusNetworking = () => {
             </div>
 
             {/* Feature 2 */}
-            <div className="p-4 md:w-1/3 sm:w-1/2 w-full transform hover:scale-105 transition-transform duration-300">
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:bg-gradient-to-br hover:from-white hover:to-indigo-50">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
@@ -75,8 +77,8 @@ export const CampusNetworking = () => {
             </div>
 
             {/* Feature 3 */}
-            <div className="p-4 md:w-1/3 sm:w-1/2 w-full transform hover:scale-105 transition-transform duration-300">
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <div className="p-4 md:w-1/3 sm:w-1/2 w-full">
+              <div className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 hover:bg-gradient-to-br hover:from-white hover:to-indigo-50">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                   <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
                     <circle cx="12" cy="5" r="3"></circle>
@@ -159,6 +161,16 @@ export const CampusNetworking = () => {
           </div>
         </div>
       </section>
+
+      <style jsx>{`
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+          animation: fadeIn 1s ease-out;
+        }
+      `}</style>
     </>
   );
 };

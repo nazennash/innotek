@@ -1,14 +1,26 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 export const Erp = () => {
   return (
     <>
-      {/* Hero Section */}
-      <section className="text-gray-600 body-font bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-          {/* Left Column: Text Content */}
-          <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-5xl text-4xl mb-4 font-bold text-gray-900">
+      {/* Hero Section with dynamic gradient */}
+      <section className="relative text-gray-600 body-font overflow-hidden bg-gradient-to-tr from-indigo-50 via-blue-50 to-cyan-50">
+        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+        <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="container mx-auto flex px-5 py-32 md:flex-row flex-col items-center relative z-10"
+        >
+          {/* Enhanced left column */}
+          <motion.div 
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+          >
+            <h1 className="title-font sm:text-6xl text-5xl mb-6 font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
               Optimize Your Business Operations
             </h1>
             <p className="mb-8 leading-relaxed text-gray-600">
@@ -22,73 +34,64 @@ export const Erp = () => {
                 Learn More
               </button>
             </div>
-          </div>
-          {/* Right Column: Image */}
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img
-              className="object-cover object-center rounded-lg shadow-2xl"
-              alt="ERP Solutions Illustration"
-              src="https://dummyimage.com/720x600/3b82f6/ffffff&text=ERP+Solutions"
-            />
-          </div>
-        </div>
+          </motion.div>
+
+          {/* Enhanced right column with hover effects */}
+          <motion.div 
+            animate={{ y: [0, -10, 0] }}
+            transition={{ repeat: Infinity, duration: 3 }}
+            className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6"
+          >
+            <div className="relative group">
+              <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur opacity-25 group-hover:opacity-75 transition duration-1000"></div>
+              <img
+                className="relative rounded-2xl shadow-2xl transform group-hover:scale-105 transition-all duration-500"
+                alt="ERP Solutions Illustration"
+                src="https://dummyimage.com/720x600/3b82f6/ffffff&text=ERP+Solutions"
+              />
+            </div>
+          </motion.div>
+        </motion.div>
       </section>
 
-      {/* Features Section */}
-      <section className="text-gray-600 body-font">
+      {/* Features section with enhanced cards */}
+      <section className="text-gray-600 body-font bg-gradient-to-br from-white to-cyan-50">
         <div className="container px-5 py-24 mx-auto">
-          <div className="text-center mb-20">
+          <motion.div 
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="text-center mb-20"
+          >
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Our ERP Solutions?</h2>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
               Our ERP solutions are designed to meet the unique needs of modern businesses, ensuring seamless integration and improved efficiency.
             </p>
-          </div>
+          </motion.div>
+          {/* Enhanced feature cards */}
           <div className="flex flex-wrap -m-4">
-            {/* Feature 1 */}
-            <div className="p-4 md:w-1/3 sm:w-1/2 w-full transform hover:scale-105 transition-transform duration-300">
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>
+            {[1, 2, 3].map((feature, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.2 }}
+                className="p-4 md:w-1/3 sm:w-1/2 w-full"
+              >
+                <div className="backdrop-blur-md bg-white/80 p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300
+                              border border-white/20 hover:border-cyan-200">
+                  <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
+                    <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                  </div>
+                  <h2 className="text-lg font-medium title-font mb-2">Integrated Finance</h2>
+                  <p className="leading-relaxed text-base">
+                    Manage your financial operations seamlessly with real-time data and analytics.
+                  </p>
                 </div>
-                <h2 className="text-lg font-medium title-font mb-2">Integrated Finance</h2>
-                <p className="leading-relaxed text-base">
-                  Manage your financial operations seamlessly with real-time data and analytics.
-                </p>
-              </div>
-            </div>
-
-            {/* Feature 2 */}
-            <div className="p-4 md:w-1/3 sm:w-1/2 w-full transform hover:scale-105 transition-transform duration-300">
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg>
-                </div>
-                <h2 className="text-lg font-medium title-font mb-2">HR Management</h2>
-                <p className="leading-relaxed text-base">
-                  Streamline your HR processes with integrated payroll, attendance, and performance management.
-                </p>
-              </div>
-            </div>
-
-            {/* Feature 3 */}
-            <div className="p-4 md:w-1/3 sm:w-1/2 w-full transform hover:scale-105 transition-transform duration-300">
-              <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
-                  <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-6 h-6" viewBox="0 0 24 24">
-                    <circle cx="12" cy="5" r="3"></circle>
-                    <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                  </svg>
-                </div>
-                <h2 className="text-lg font-medium title-font mb-2">Supply Chain</h2>
-                <p className="leading-relaxed text-base">
-                  Optimize your supply chain with real-time tracking, inventory management, and demand forecasting.
-                </p>
-              </div>
-            </div>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>

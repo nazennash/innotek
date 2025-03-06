@@ -1,11 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export const XcitiumPage = () => {
+  const [activeFaq, setActiveFaq] = useState(null);
+
+  const toggleFaq = (index) => {
+    setActiveFaq(activeFaq === index ? null : index);
+  };
+
   return (
     <>
+      {/* Hero Section */}
+      <div className="relative bg-gradient-to-r from-blue-900 via-indigo-800 to-indigo-900 h-[80vh]">
+        <div className="absolute inset-0 bg-[url('/cyber-pattern.png')] opacity-10"></div>
+        <div className="relative container mx-auto px-4 h-full flex items-center">
+          <div className="text-white max-w-3xl">
+            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+              Next-Gen Cybersecurity for the Digital Age
+            </h1>
+            <p className="text-xl mb-8 text-gray-200">
+              Protect your business with AI-powered security that never sleeps
+            </p>
+            <div className="flex gap-4">
+              <button className="bg-white text-indigo-900 px-8 py-3 rounded-lg font-semibold hover:bg-opacity-90 transition-all">
+                Get Started
+              </button>
+              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-indigo-900 transition-all">
+                Watch Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Header Section */}
       <section className="text-gray-600 body-font bg-gradient-to-br from-gray-50 to-indigo-50">
         <div className="container px-5 py-24 mx-auto">
-          {/* Header Section */}
           <div className="text-center mb-20">
             <h1 className="text-4xl font-bold text-gray-900 mb-4">Xcitium Cybersecurity Solutions</h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
@@ -194,6 +223,130 @@ export const XcitiumPage = () => {
           </div>
         </div>
       </section>
+
+      {/* New Statistics Section */}
+      <div className="bg-indigo-900 text-white py-16">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div>
+              <div className="text-4xl font-bold mb-2">99.9%</div>
+              <div className="text-indigo-200">Threat Detection Rate</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">24/7</div>
+              <div className="text-indigo-200">Active Monitoring</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">10k+</div>
+              <div className="text-indigo-200">Protected Companies</div>
+            </div>
+            <div>
+              <div className="text-4xl font-bold mb-2">0.1ms</div>
+              <div className="text-indigo-200">Response Time</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* New Testimonials Section */}
+      <div className="bg-gray-50 py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">What Our Clients Say</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            {[1, 2, 3].map((i) => (
+              <div key={i} className="bg-white p-6 rounded-xl shadow-lg">
+                <div className="flex items-center mb-4">
+                  <img
+                    src={`https://i.pravatar.cc/60?img=${i}`}
+                    alt="Avatar"
+                    className="w-12 h-12 rounded-full"
+                  />
+                  <div className="ml-4">
+                    <div className="font-semibold">John Doe</div>
+                    <div className="text-sm text-gray-500">CEO, Tech Corp</div>
+                  </div>
+                </div>
+                <p className="text-gray-600">
+                  "Xcitium has transformed our security infrastructure. Their AI-powered solutions have prevented numerous potential breaches."
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      {/* New FAQ Section */}
+      <div className="py-16 container mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+        <div className="max-w-3xl mx-auto">
+          {[
+            {
+              q: "How does Xcitium's AI detection work?",
+              a: "Our AI system continuously learns from global threat patterns, providing real-time protection against new and emerging threats."
+            },
+            {
+              q: "What makes Xcitium different from other solutions?",
+              a: "Xcitium's unique approach combines zero-trust architecture with AI-powered threat detection, providing unmatched security."
+            },
+            {
+              q: "Can Xcitium scale with my business?",
+              a: "Yes, our solutions are fully scalable and can adapt to businesses of any size, from startups to enterprises."
+            }
+          ].map((faq, index) => (
+            <div key={index} className="mb-4">
+              <button
+                className="w-full p-4 text-left bg-white rounded-lg shadow-md focus:outline-none"
+                onClick={() => toggleFaq(index)}
+              >
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold">{faq.q}</span>
+                  <span className={`transform transition-transform ${activeFaq === index ? 'rotate-180' : ''}`}>
+                    ↓
+                  </span>
+                </div>
+                {activeFaq === index && (
+                  <p className="mt-4 text-gray-600">{faq.a}</p>
+                )}
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Contact Form Section */}
+      <div className="bg-gradient-to-r from-indigo-900 to-blue-900 py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-xl mx-auto bg-white rounded-xl p-8 shadow-xl">
+            <h2 className="text-3xl font-bold text-center mb-8">Raise a concern</h2>
+            <form className="space-y-4">
+              <div>
+                <input
+                  type="text"
+                  placeholder="Your Name"
+                  className="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  className="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                />
+              </div>
+              <div>
+                <textarea
+                  placeholder="Your Message"
+                  rows="4"
+                  className="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                ></textarea>
+              </div>
+              <button className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition-colors">
+                Send Concern
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
