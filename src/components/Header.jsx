@@ -39,7 +39,8 @@ export const Header = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 w-full text-gray-700 bg-white transition-all duration-300 ${
+    // className={`sticky top-0 z-50 w-full text-gray-700 bg-white transition-all duration-300 ${
+      className={`sticky top-0 z-50 w-full text-gray-700 bg-white/60 transition-all duration-300 ${
         scrolled ? 'shadow-md py-2' : 'shadow-sm py-4'
       }`}
     >

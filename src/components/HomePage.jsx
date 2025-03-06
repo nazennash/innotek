@@ -43,10 +43,12 @@ const HomePage = () => {
                     <img
                         src={image}
                         alt="Header Background"
-                        className="header-image w-full h-full object-cover"
+                        // className="header-image w-full h-full object-cover"
+                        className="absolute inset-0 w-full h-full object-cover opacity-100"
                     />
 
-                    <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col text-center bg-black bg-black/80">
+                {/* <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col text-center bg-black bg-black/80"> */}
+                    <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col text-center">
                         <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
                             {text.split('').map((char, index) => (
                                 <span key={index} className="typing-effect">
@@ -56,9 +58,9 @@ const HomePage = () => {
                             <span className="blinking-cursor text-4xl font-thin">|</span>
                         </h1>
 
-                        <div className="container mx-auto px-4 text-center relative z-10 animate-fade-in text-white">
+                        <div className="container mx-auto px-4 text-center relative z-10 animate-fade-in text-black">
                             
-                            <p className="text-xl text-gray-600 mb-8 animate-fade-in">
+                            <p className="text-xl text-black mb-8 animate-fade-in">
                                 We deliver cutting-edge technology solutions to help your business grow and thrive in the digital age.
                             </p>
                         </div>
@@ -66,7 +68,7 @@ const HomePage = () => {
                 </div>
             </div>
 
-            <section className="bg-indigo-50 py-20 relative overflow-hidden">
+            {/* <section className="bg-indigo-50 py-20 relative overflow-hidden">
                 <img
                     src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
                     alt="IT Solutions"
@@ -83,7 +85,7 @@ const HomePage = () => {
                         Get Started
                     </button>
                 </div>
-            </section>
+            </section> */}
 
             <section className="py-12 bg-white">
                 <div className="container mx-auto px-4">
