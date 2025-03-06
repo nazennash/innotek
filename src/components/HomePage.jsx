@@ -48,8 +48,9 @@ const HomePage = () => {
                     />
 
                 {/* <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col text-center bg-black bg-black/80"> */}
-                    <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col text-center bg-black/30">
-                        <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
+                    <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center flex-col text-center bg-black/20">
+                        <div class="bg-black/30 p-10 m-5 rounded-3xl">
+                        <h1 className="text-3xl md:text-4xl md:text-6xl font-bold text-white mb-4">
                             {text.split('').map((char, index) => (
                                 <span key={index} className="typing-effect">
                                     {char}
@@ -59,9 +60,10 @@ const HomePage = () => {
                         </h1>
 
                         <div className="container mx-auto px-4 text-center relative z-10 animate-fade-in text-white ">
-                            <p className="text-2xl text-white font-bold mb-8 animate-fade-in">
+                            <p className="text-lg md:text-2xl text-white font-bold mb-8 animate-fade-in">
                                 We deliver cutting-edge technology solutions to help your business grow and thrive in the digital age.
                             </p>
+                        </div>
                         </div>
                     </div>
                 </div>
