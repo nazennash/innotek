@@ -115,14 +115,15 @@ export const Header = () => {
         >
           <div className="flex flex-col space-y-15 p-6 text-white justify-center items-center h-full text-xl">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                // href={item.href}
+                to={item.href}
                 className="font-medium hover:text-indigo-600 transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
