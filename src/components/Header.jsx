@@ -31,7 +31,7 @@ export const Header = () => {
   }, []);
 
   const navItems = [
-    { name: 'Home', href: '#' },
+    { name: 'Home', href: '/' },
     { name: 'About Us', href: 'about' },
     { name: 'Services', href: 'services' },
     { name: 'Contact Us', href: 'contact' },
@@ -82,7 +82,6 @@ export const Header = () => {
           {navItems.map((item) => (
             <Link
               key={item.name}
-            //   href={item.href}
                 to={item.href}
               className="font-medium text-gray-800 hover:text-indigo-600 transition-colors duration-300 relative group py-2"
             >
@@ -92,7 +91,6 @@ export const Header = () => {
           ))}
         </nav>
 
-        {/* <button className="hidden md:inline-flex items-center bg-indigo-600 text-white border-0 py-2 px-6 focus:outline-none rounded-lg text-base font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:bg-indigo-700 group"> */}
         <button className="hidden md:inline-flex items-center bg-indigo-800 text-white py-2 px-6 focus:outline-none rounded-lg text-base font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:bg-indigo-700 group">
           + 254 700 000 000
           <ChevronRight size={18} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />
@@ -111,13 +109,12 @@ export const Header = () => {
           className={`fixed inset-y-0 left-0 z-50 w-full bg-black shadow-lg transform transition-transform duration-300 ${
             mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
-          onClick={(e) => e.stopPropagation()} // Prevent closing the menu when clicking on the menu itself
+          onClick={(e) => e.stopPropagation()} 
         >
           <div className="flex flex-col space-y-15 p-6 text-white justify-center items-center h-full text-xl">
             {navItems.map((item) => (
               <Link
                 key={item.name}
-                // href={item.href}
                 to={item.href}
                 className="font-medium hover:text-indigo-600 transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
