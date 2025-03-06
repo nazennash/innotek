@@ -26,26 +26,15 @@ const App = () => {
       <Route path="/contact" element={<Contact />} />
       <Route path="/endpoint-security" element={<XcitiumPage />} />
       <Route path="/firewall-protection" element={<Firewall />} />
-      {/* alarms-surveillance */}
       <Route path="/alarms-surveillance" element={<Surveillance />} />
-      {/* home-networking */}
       <Route path="/home-networking" element={<HomeNetworking />} />
-      {/* campus-networking */}
       <Route path="/campus-networking" element={<CampusNetworking />} />
-      {/* network-security */}
-      {/* vpn-solutions */}
       <Route path="/vpn-solutions" element={<VpnSolutions />} />
-      {/* crm */}
       <Route path="/crm" element={<Crm />} />
-      {/* erp */}
       <Route path="/erp" element={<Erp />} />
-      {/* web-development */}
       <Route path="/website" element={<Website />} />
-      {/* mobile-apps */}
       <Route path="/app-design" element={<AppDesign />} />
-      {/* digital-marketing */}
       <Route path="/digital-marketing" element={<DigitalMarketting />} />
-      {/* cloud-services */}
     </Routes>
     </>
   )
