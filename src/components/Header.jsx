@@ -17,6 +17,20 @@ export const Header = () => {
     };
   }, []);
 
+  // Handle window resize to close mobile menu on md screens and above
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setMobileMenuOpen(false); // Close the mobile menu on md screens and above
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   // Navigation items with consistent structure
   const navItems = [
     { name: 'Home', href: '#' },
@@ -33,7 +47,7 @@ export const Header = () => {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo and Mobile Menu Button */}
-        <div className="flex items-center ">
+        <div className="flex items-center">
           <a
             href="#"
             className="flex title-font font-medium items-center text-gray-900 transform transition-transform duration-300 hover:scale-105"
@@ -96,7 +110,6 @@ export const Header = () => {
       >
         {/* Mobile Navigation Menu */}
         <div
-        //   className={`fixed inset-y-0 left-0 z-50 w-full bg-white shadow-lg transform transition-transform duration-300 ${
           className={`fixed inset-y-0 left-0 z-50 w-full bg-black shadow-lg transform transition-transform duration-300 ${
             mobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
           }`}
@@ -107,7 +120,7 @@ export const Header = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="font-medium  hover:text-indigo-600 transition-colors duration-200"
+                className="font-medium hover:text-indigo-600 transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {item.name}
