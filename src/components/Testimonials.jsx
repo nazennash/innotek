@@ -10,7 +10,7 @@ const TestimonialsCarousel = () => {
     {
       id: 1,
       text: "Innovative Digital Computers transformed our security infrastructure. Their endpoint and firewall solutions have given us peace of mind. Professional team, delivered on time.",
-      author: "James Kamau",
+      author: "Stephen Wafula",
       position: "IT Director",
       company: "Frepers Security",
       avatar: "../assets/react.svg",
@@ -37,7 +37,7 @@ const TestimonialsCarousel = () => {
     {
       id: 4,
       text: "Their VPN and surveillance solutions helped us secure our branches across the country. Clear communication, fair pricing, and support that doesn't end after go-live. A trusted vendor.",
-      author: "Mary Akinyi",
+      author: "Amos Korir",
       position: "Head of Security",
       company: "Frepers Security",
       avatar: "/api/placeholder/80/80",

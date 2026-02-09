@@ -13,14 +13,14 @@ export const ContactUs = () => {
             src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=Westlands%20Nairobi+(My%20Business%20Name)&ie=UTF8&t=&z=14&iwloc=B&output=embed"
             style={{ filter: 'grayscale(1) contrast(1.2) opacity(0.4)' }}
           />
-          <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md hover:shadow-lg transition-shadow duration-300">
+          <div className="bg-white w-full relative flex flex-wrap py-6 rounded shadow-md hover:shadow-lg transition-shadow duration-300">
             <div className="lg:w-1/2 px-6">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
               <p className="mt-1">Westlands, Nairobi, Kenya</p>
             </div>
             <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
-              <a className="text-indigo-500 leading-relaxed hover:text-indigo-600 transition-colors duration-300">example@email.com</a>
+              <a href="mailto:sales@innovativedigitalcomputers.co.ke" className="text-indigo-500 leading-relaxed hover:text-indigo-600 transition-colors duration-300">sales@innovativedigitalcomputers.co.ke</a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
               <p className="leading-relaxed">0705994560</p>
             </div>
