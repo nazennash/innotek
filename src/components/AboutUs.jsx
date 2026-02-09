@@ -24,11 +24,10 @@ export const AboutUs = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+              <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 justify-center gap-8">
                 {/* Card 1 - CEO */}
-                <div className="p-4 md:w-1/3 sm:mb-0 mb-6 animate-fade-in-up">
+                <div className="p-4 md:w-1/2 max-w-md sm:mb-0 mb-6 animate-fade-in-up">
                   <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  {/* <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"> */}
                     <img
                       alt="CEO"
                       className="object-cover object-center h-full w-full"
@@ -38,14 +37,13 @@ export const AboutUs = () => {
                   <h2 className="text-xl font-medium title-font text-gray-900 mt-5 text-center">Walter Ochieng</h2>
                   <p className="text-base leading-relaxed mt-2 text-center">CEO & Founder</p>
                   <p className="text-gray-600 mt-2 text-center">
-                    Jane is a visionary leader with over 15 years of experience in sustainable business practices.
+                    Walter is a visionary leader with over 15 years of experience in technology and business growth.
                   </p>
                 </div>
 
                 {/* Card 2 - CTO */}
-                <div className="p-4 md:w-1/3 sm:mb-0 mb-6 animate-fade-in-up delay-100">
+                <div className="p-4 md:w-1/2 max-w-md sm:mb-0 mb-6 animate-fade-in-up delay-100">
                   <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  {/* <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"> */}
                     <img
                       alt="CTO"
                       className="object-cover object-center h-full w-full"
@@ -55,24 +53,7 @@ export const AboutUs = () => {
                   <h2 className="text-xl font-medium title-font text-gray-900 mt-5 text-center">Nash Oliver</h2>
                   <p className="text-base leading-relaxed mt-2 text-center">Chief Technology Officer</p>
                   <p className="text-gray-600 mt-2 text-center">
-                    John is an innovator with a passion for creating cutting-edge, eco-friendly technologies.
-                  </p>
-                </div>
-
-                {/* Card 3 - COO */}
-                <div className="p-4 md:w-1/3 sm:mb-0 mb-6 animate-fade-in-up delay-200">
-                  <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
-                  {/* <div className="rounded-full h-64 w-64 mx-auto overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"> */}
-                    <img
-                      alt="COO"
-                      className="object-cover object-center h-full w-full"
-                      src="https://img.freepik.com/free-photo/smiley-african-woman-with-golden-earrings_23-2148747979.jpg?ga=GA1.1.822486634.1739465152&semt=ais_hybrid"
-                    />
-                  </div>
-                  <h2 className="text-xl font-medium title-font text-gray-900 mt-5 text-center">Queen Denver</h2>
-                  <p className="text-base leading-relaxed mt-2 text-center">Chief Operations Officer</p>
-                  <p className="text-gray-600 mt-2 text-center">
-                    Emily ensures our operations run smoothly while maintaining our commitment to sustainability.
+                    Nash is an innovator with a passion for creating cutting-edge technology solutions.
                   </p>
                 </div>
               </div>

@@ -15,6 +15,7 @@ import { Erp } from './components/Erp'
 import { Website } from './components/Website'
 import { AppDesign } from './components/AppDesign'
 import { DigitalMarketting } from './components/DigitalMarketting'
+import { SoftwareQualityAssurance } from './components/SoftwareQualityAssurance'
 
 const App = () => {
   return (
@@ -35,6 +36,7 @@ const App = () => {
       <Route path="/website" element={<Website />} />
       <Route path="/app-design" element={<AppDesign />} />
       <Route path="/digital-marketing" element={<DigitalMarketting />} />
+      <Route path="/software-quality-assurance" element={<SoftwareQualityAssurance />} />
     </Routes>
     </>
   )

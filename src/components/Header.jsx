@@ -93,7 +93,7 @@ export const Header = () => {
         </nav>
 
         <button className="hidden md:inline-flex items-center bg-indigo-800 text-white py-2 px-6 focus:outline-none rounded-lg text-base font-medium transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:bg-indigo-700 group">
-          + 254 700 000 000
+          0705994560
           <ChevronRight size={18} className="ml-1 transition-transform duration-300 group-hover:translate-x-1" />
         </button>
       </div>

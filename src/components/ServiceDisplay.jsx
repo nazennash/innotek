@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { ArrowRight, ShieldCheck, Flame, Video, Home, Server, Lock, Users, Cog, Globe, Smartphone } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Flame, Video, Home, Server, Lock, Users, Cog, Globe, Smartphone, ClipboardCheck } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const ServiceDisplay = () => {
@@ -180,6 +180,21 @@ const ServiceDisplay = () => {
               Learn More
               <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
             </Link>
+          </div>
+        </div>
+
+        {/* Software Quality Assurance */}
+        <div className="flex items-center lg:w-3/5 mx-auto border-b pb-10 mb-10 border-gray-200 sm:flex-row flex-col animate-fade-in opacity-0 transition-opacity duration-500">
+          <div className="flex-grow sm:text-left text-center mt-6 sm:mt-0">
+            <h2 className="text-gray-900 text-lg title-font font-medium mb-2">Software Quality Assurance</h2>
+            <p className="leading-relaxed text-base">Ensure reliable, bug-free software with comprehensive QA services including test planning, automation, performance testing, and continuous quality monitoring throughout the development lifecycle.</p>
+            <Link to="/software-quality-assurance" className="mt-3 text-indigo-500 inline-flex items-center cursor-pointer group">
+              Learn More
+              <ArrowRight className="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" />
+            </Link>
+          </div>
+          <div className="sm:w-32 sm:order-none order-first sm:h-32 h-20 w-20 sm:ml-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 flex-shrink-0 transition-all duration-300 hover:bg-indigo-200 hover:scale-105">
+            <ClipboardCheck className="sm:w-16 sm:h-16 w-10 h-10" />
           </div>
         </div>
             

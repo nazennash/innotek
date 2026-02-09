@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import image from '../assets/image1.jpg';
 import './Home.css';
 
@@ -212,6 +213,21 @@ const HomePage = () => {
                             <button className="bg-indigo-500 text-white px-6 py-2 rounded-lg hover:bg-indigo-600 transition-colors duration-300">
                                 Learn More
                             </button>
+                        </div>
+
+                        <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up delay-300 transform hover:scale-105">
+                            <img
+                                src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80"
+                                alt="Software Quality Assurance"
+                                className="w-full h-48 object-cover rounded-lg mb-4"
+                            />
+                            <h3 className="text-xl font-semibold mb-2">Software Quality Assurance</h3>
+                            <p className="text-gray-600 mb-4">
+                                Comprehensive QA services including test planning, automation, and performance testing.
+                            </p>
+                            <Link to="/software-quality-assurance" className="bg-indigo-500 text-white px-6 py-2 rounded-lg hover:bg-indigo-600 transition-colors duration-300 inline-block">
+                                Learn More
+                            </Link>
                         </div>
                     </div>
                 </div>

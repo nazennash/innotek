@@ -9,39 +9,39 @@ const TestimonialsCarousel = () => {
   const testimonials = [
     {
       id: 1,
-      text: "Tesla's partnership with this company transformed our approach to sustainable energy. Their innovative solutions helped us optimize our manufacturing processes, resulting in a 30% increase in efficiency.",
-      author: "Elon Musk",
-      position: "CEO",
-      company: "Tesla",
+      text: "Innovative Digital Computers transformed our security infrastructure. Their endpoint and firewall solutions have given us peace of mind. Professional team, delivered on time.",
+      author: "James Kamau",
+      position: "IT Director",
+      company: "Frepers Security",
       avatar: "../assets/react.svg",
       stars: 5
     },
     {
       id: 2,
-      text: "As we scaled Apple's supply chain, we needed partners who understood our commitment to perfection. This team delivered beyond our expectations, helping us maintain our quality standards while meeting unprecedented demand.",
-      author: "Tim Cook",
-      position: "Chief Executive Officer",
-      company: "Apple Inc.",
+      text: "We needed a partner who could handle our growing data and networking needs. They designed and implemented our campus network—reliable, scalable, and well documented. Highly recommend.",
+      author: "Grace Wanjiku",
+      position: "Operations Manager",
+      company: "Hi Tech Data Group",
       avatar: "/api/placeholder/80/80",
-      stars: 5
+      stars: 4
     },
     {
       id: 3,
-      text: "Microsoft's cloud infrastructure faced unique challenges that required innovative thinking. Their strategic insights and technical expertise helped us revolutionize our Azure platform, driving growth across enterprise solutions.",
-      author: "Satya Nadella",
+      text: "From CRM to ERP and website development, they've been our go-to tech partner. East Africa Tech Solutions has grown with their support. Responsive, knowledgeable, and truly invested in our success.",
+      author: "Peter Omondi",
       position: "CEO",
-      company: "Microsoft",
+      company: "East Africa Tech Solutions",
       avatar: "/api/placeholder/80/80",
-      stars: 5
+      stars: 3
     },
     {
       id: 4,
-      text: "Amazon's customer-obsessed approach demands partners who share our values. This company has consistently supported our mission to be Earth's most customer-centric company, helping us pioneer new frontiers in e-commerce.",
-      author: "Andy Jassy",
-      position: "President and CEO",
-      company: "Amazon",
+      text: "Their VPN and surveillance solutions helped us secure our branches across the country. Clear communication, fair pricing, and support that doesn't end after go-live. A trusted vendor.",
+      author: "Mary Akinyi",
+      position: "Head of Security",
+      company: "Frepers Security",
       avatar: "/api/placeholder/80/80",
-      stars: 5
+      stars: 4
     }
   ];
 

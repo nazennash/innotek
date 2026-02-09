@@ -22,7 +22,7 @@ export const ContactUs = () => {
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
               <a className="text-indigo-500 leading-relaxed hover:text-indigo-600 transition-colors duration-300">example@email.com</a>
               <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-              <p className="leading-relaxed">123-456-7890</p>
+              <p className="leading-relaxed">0705994560</p>
             </div>
           </div>
         </div>
